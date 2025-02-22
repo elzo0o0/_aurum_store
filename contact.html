@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты - Aurum Store</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <header>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="logo">
+        <h1>Aurum</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="men.html">Мужская одежда</a></li>
+          <li><a href="women.html">Женская одежда</a></li>
+          <li><a href="kids.html">Детская одежда</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="cart">
+        <a href="#">Корзина (0)</a>
+      </div>
+    </header>
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <section class="contact">
+      <h2>Контакты</h2>
+      <div class="contact-info">
+        <p>
+          <strong>Адрес:</strong> ул. Славы, д. 26, с. Нижние Метески, Россия
+        </p>
+        <p><strong>Телефон:</strong> +7 (906) 329-07-36</p>
+        <p><strong>Email:</strong> info@aurumstore.com</p>
+      </div>
+      <div class="contact-form">
+        <h3>Напишите нам</h3>
+        <form action="#" method="post">
+          <label for="name">Имя:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Сообщение:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>О нас</h4>
+          <p>Мы предлагаем лучшую одежду для всех возрастов.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Контакты</h4>
+          <p>Email: info@aurumstore.com</p>
+          <p>Телефон: +7 (906) 329-07-36</p>
+        </div>
+        <div class="footer-section">
+          <h4>Социальные сети</h4>
+          <a href="https://t.me/elzo0o0" target="_blank">Telegram</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Aurum Store. Все права защищены.</p>
+      </div>
+    </footer>
+    <div id="cartModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Ваша корзина</h2>
+        <ul id="cartItems"></ul>
+        <p id="cartTotal"></p>
+        <button id="clearCart">Очистить корзину</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

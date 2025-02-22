@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Магазин одежды Aurum</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="bgphoto.css" />
+  </head>
+  <body>
+    <header>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="logo">
+        <h1>Aurum</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="men.html">Мужская одежда</a></li>
+          <li><a href="women.html">Женская одежда</a></li>
+          <li><a href="kids.html">Детская одежда</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="cart">
+        <a href="#">Корзина (0)</a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <img src="img/IMG_4906.JPG" alt="фон" />
+      <div class="img-text">
+        <h2>Новая коллекция Весна 2025</h2>
+        <p>Откройте для себя последние тенденции моды</p>
+      </div>
+    </section>
+
+    <section class="products">
+      <h2>Популярные товары</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="img/худи.JPG" alt="Женское худи" />
+          <h3>Женское худи</h3>
+          <p>2999₽</p>
+          <button>Добавить в корзину</button>
+        </div>
+        <div class="product-card">
+          <img src="img/джинсы.JPG" alt="Женские джинсы" />
+          <h3>Женские джинсы</h3>
+          <p>3999₽</p>
+          <button>Добавить в корзину</button>
+        </div>
+        <div class="product-card">
+          <img src="img/худи-муж (2).JPG" alt="Мужское худи" />
+          <h3>Мужское худи</h3>
+          <p>2899₽</p>
+          <button>Добавить в корзину</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>О нас</h4>
+          <p>Мы предлагаем лучшую одежду для всех возрастов.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Контакты</h4>
+          <p>Email: info@aurumstore.com</p>
+          <p>Телефон: +7 (906) 329-07-36</p>
+        </div>
+        <div class="footer-section">
+          <h4>Социальные сети</h4>
+          <a href="https://t.me/elzo0o0" target="_blank">Telegram</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Aurum store. Все права защищены.</p>
+      </div>
+    </footer>
+    <div id="cartModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Ваша корзина</h2>
+        <ul id="cartItems"></ul>
+        <p id="cartTotal"></p>
+        <button id="clearCart">Очистить корзину</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
